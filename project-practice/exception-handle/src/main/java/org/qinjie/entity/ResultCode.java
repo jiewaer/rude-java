@@ -20,7 +20,10 @@ public enum ResultCode {
      * 校验异常
      */
     CHECK_EXCEPTION(5002, "校验异常"),
-
+    /**
+     * 字符串返回值处理异常
+     */
+    STRING_EXCEPTION(5003, "字符串返回值处理异常"),
     ;
 
     private int code;

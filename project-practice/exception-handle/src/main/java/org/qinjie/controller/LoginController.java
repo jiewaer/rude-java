@@ -17,14 +17,8 @@ import javax.validation.Valid;
 public class LoginController {
 
     @PostMapping("/login")
-    public ResultVO<String> login(@RequestBody @Valid User user){
-        try {
-            User user1 = null;
-            user1.getUserName();
-        }catch (Exception e){
-            throw new ApiException(ResultCode.USERNAME_PASSWORD_ERROR,user.toString());
-        }
-        return new ResultVO<>(ResultCode.SUCCESS);
+    public User login(@RequestBody @Valid User user){
+        return user;
     }
 
 }
