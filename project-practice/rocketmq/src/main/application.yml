@@ -1,0 +1,16 @@
+rocketmq:
+  name-server: http://81.69.253.43:9876
+  producer:
+    group: praise_group
+server:
+  port: 10000
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123qweASD
+    url: jdbc:mysql://mysql57.rdsmxwdkx7u7ptk.rds.bj.baidubce.com:3306/normal
+swagger:
+  docket:
+    base-package: com.rocketmq.controller

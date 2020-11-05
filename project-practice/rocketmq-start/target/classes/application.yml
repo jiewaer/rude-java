@@ -1,0 +1,7 @@
+rocketmq:
+  name-server: 81.69.253.43:9876
+  producer:
+    group: myGroup
+    access-key: RocketMQ
+    secret-key: 12345678
+
